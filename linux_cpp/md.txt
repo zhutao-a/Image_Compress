@@ -1,0 +1,37 @@
+#1.远程连接查看服务器文件夹,找到图片所在文件夹
+	ssh -P cicc1837@233.233.233.233
+#2.退出连接，下载服务器端的图片（downscaled）用于硬件处理
+	scp -P 2333 -r cicc1837@233.233.233.233:/downscaled /mnt/hgfs/bmp/download_1k/
+#3.将本地代码传输至远程服务器（多线程和单线程）
+	scp -P 2333 -r ~/upampling/ ~/upsampling_multi/ cicc1837@233.233.233.233:~/code/
+#4.远程登陆服务器
+	ssh -P 2333 cicc1837@233.233.233.233
+#5.进入代码文件夹～/code
+	cd ~/code
+#6.运行多线程和单线程代码
+	cd ~/code/upsampling/
+	gcc *.c
+	cd ~/code/upsampling_multi/
+	gcc *.c -pthread
+#7.进入图片文件夹
+	cd ~/downscaled/
+#8.运行单线程a.out文件，输出图片至upscaled文件夹
+	for i in *.bmp;
+	  do 
+		~/code/upsampling/a.out 
+		~/downscaled/$i 
+		~/upscaled/$i;
+	  done
+#9.运行多线程a.out文件，输出图片之upscaled_multithread文件夹
+	for i in *.bmp;
+	  do 
+		~/code/upsampling_multi/a.out
+		~/downscaled/$i
+		~/upscaled_multithread/$i;
+	  done
+#10.退出远程连接
+	exit
+#11.将fpga输出的图片传输给远程服务器
+	scp -P 2333 /mnt/hgfs/bmp/fpga_upsampling/*  cicc1837@233.233.233.233:/fpga_out
+#12.远程连接文件夹，查看图片是否传输正确
+	ssh -P 2333 cicc1837@233.233.233.233

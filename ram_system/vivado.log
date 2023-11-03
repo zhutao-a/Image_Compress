@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Aug 17 15:00:44 2023
+# Process ID: 15968
+# Current directory: C:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22172 C:\Users\password_is_447\Desktop\BaiduSyncdisk\project\image_compress\ram_system\ram_system.xpr
+# Log file: C:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system/vivado.log
+# Journal file: C:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system/ram_system.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/password_is_447/Desktop/image_compress/ram_system' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system/ip_repo/apb_reg'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 870.492 ; gain = 235.160
+open_bd_design {C:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system/ram_system.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_apb_bridge:3.0 - axi_apb_bridge_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_10M
+Adding cell -- xilinx.com:user:apb_reg:1.0 - apb_reg_0
+Adding cell -- xilinx.com:module_ref:encoder_top:1.0 - encoder_top_0
+Excluding </processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM> from </axi_dma_0/Data_SG>
+Excluding </axi_dma_0/S_AXI_LITE/Reg> from </axi_dma_0/Data_MM2S>
+Excluding </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> from </axi_dma_0/Data_MM2S>
+Excluding </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> from </axi_dma_0/Data_S2MM>
+Successfully read diagram <system> from BD file <C:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system/ram_system.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1118.871 ; gain = 26.469
+regenerate_bd_layout
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+open_bd_design {C:/Users/password_is_447/Desktop/BaiduSyncdisk/project/image_compress/ram_system/ram_system.srcs/sources_1/bd/system/system.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 17 16:44:30 2023...

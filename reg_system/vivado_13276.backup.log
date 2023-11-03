@@ -1,0 +1,738 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Aug 16 20:57:38 2023
+# Process ID: 13276
+# Current directory: C:/Users/password_is_447/Desktop/image_compress/reg_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21952 C:\Users\password_is_447\Desktop\image_compress\reg_system\reg_system.xpr
+# Log file: C:/Users/password_is_447/Desktop/image_compress/reg_system/vivado.log
+# Journal file: C:/Users/password_is_447/Desktop/image_compress/reg_system\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/password_is_447/Desktop/image_compress/reg_system/ip_repo/apb_reg'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 835.211 ; gain = 255.516
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-5457] ref source:C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci
+generate_target Simulation [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ram_32x256'. Target already exists and is up to date.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_jpegls_encoder_behav -key {Behavioral:sim_1:Functional:tb_jpegls_encoder} -tclbatch {tb_jpegls_encoder.tcl} -protoinst "protoinst_files/bd_8562.protoinst" -protoinst "protoinst_files/system.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+source tb_jpegls_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_jpegls_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1172.422 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_jpegls_encoder/encoder_top_u0/jpegls_encoder_uo}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_jpegls_encoder/encoder_top_u0/jpegls_encoder_uo/RegularModeProcessing_u0}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_jpegls_encoder/encoder_top_u0/jpegls_encoder_uo/RunModeProcessing_u0}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_jpegls_encoder/encoder_top_u0/jpegls_encoder_uo/stream_concat_u0}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.422 ; gain = 0.000
+run 5 us
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/sim/ram_32x256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_32x256
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRamIn
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRamOut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/GetNextSample.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GetNextSample
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/GolombCoding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GolombCoding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RegularModeProcessing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegularModeProcessing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RunModeProcessing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/new/encoder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/jpegls_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpegls_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/stream_concat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_concat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_jpegls_encoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.ram_32x256
+Compiling module xil_defaultlib.DataRamIn
+Compiling module xil_defaultlib.GetNextSample
+Compiling module xil_defaultlib.GolombCoding
+Compiling module xil_defaultlib.RegularModeProcessing
+Compiling module xil_defaultlib.RunModeProcessing
+Compiling module xil_defaultlib.stream_concat
+Compiling module xil_defaultlib.jpegls_encoder
+Compiling module xil_defaultlib.DataRamOut
+Compiling module xil_defaultlib.encoder_top
+Compiling module xil_defaultlib.tb_jpegls_encoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_jpegls_encoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.422 ; gain = 0.000
+run 5 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_module_reference system_encoder_top_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/password_is_447/Desktop/image_compress/reg_system/ip_repo/apb_reg'.
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_apb_bridge:3.0 - axi_apb_bridge_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_10M
+Adding cell -- xilinx.com:user:apb_reg:1.0 - apb_reg_0
+Adding cell -- xilinx.com:module_ref:encoder_top:1.0 - encoder_top_0
+Excluding </processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM> from </axi_dma_0/Data_SG>
+Excluding </axi_dma_0/S_AXI_LITE/Reg> from </axi_dma_0/Data_MM2S>
+Excluding </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> from </axi_dma_0/Data_MM2S>
+Excluding </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> from </axi_dma_0/Data_S2MM>
+Successfully read diagram <system> from BD file <C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/system.bd>
+Upgrading 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_encoder_top_0_0 from encoder_top_v1_0 1.0 to encoder_top_v1_0 1.0
+Wrote  : <C:\Users\password_is_447\Desktop\image_compress\reg_system\reg_system.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+upgrade_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1172.422 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.422 ; gain = 0.000
+INFO: [Vivado 12-5457] ref source:C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci
+generate_target Simulation [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ram_32x256'. Target already exists and is up to date.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/sim/ram_32x256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_32x256
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRamIn
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRamOut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/GetNextSample.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GetNextSample
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/GolombCoding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GolombCoding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RegularModeProcessing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegularModeProcessing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RunModeProcessing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/new/encoder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/jpegls_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpegls_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/stream_concat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_concat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_jpegls_encoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.ram_32x256
+Compiling module xil_defaultlib.DataRamIn
+Compiling module xil_defaultlib.GetNextSample
+Compiling module xil_defaultlib.GolombCoding
+Compiling module xil_defaultlib.RegularModeProcessing
+Compiling module xil_defaultlib.RunModeProcessing
+Compiling module xil_defaultlib.stream_concat
+Compiling module xil_defaultlib.jpegls_encoder
+Compiling module xil_defaultlib.DataRamOut
+Compiling module xil_defaultlib.encoder_top
+Compiling module xil_defaultlib.tb_jpegls_encoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_jpegls_encoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_jpegls_encoder_behav -key {Behavioral:sim_1:Functional:tb_jpegls_encoder} -tclbatch {tb_jpegls_encoder.tcl} -protoinst "protoinst_files/bd_8562.protoinst" -protoinst "protoinst_files/system.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+source tb_jpegls_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_jpegls_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.422 ; gain = 0.000
+run 5 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Vivado 12-5457] ref source:C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci
+generate_target Simulation [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ram_32x256'. Target already exists and is up to date.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_jpegls_encoder_behav -key {Behavioral:sim_1:Functional:tb_jpegls_encoder} -tclbatch {tb_jpegls_encoder.tcl} -protoinst "protoinst_files/bd_8562.protoinst" -protoinst "protoinst_files/system.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+source tb_jpegls_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_jpegls_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1172.422 ; gain = 0.000
+run 5 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Vivado 12-5457] ref source:C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci
+generate_target Simulation [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ram_32x256'. Target already exists and is up to date.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_jpegls_encoder_behav -key {Behavioral:sim_1:Functional:tb_jpegls_encoder} -tclbatch {tb_jpegls_encoder.tcl} -protoinst "protoinst_files/bd_8562.protoinst" -protoinst "protoinst_files/system.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+source tb_jpegls_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_jpegls_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.422 ; gain = 0.000
+run 5 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Vivado 12-5457] ref source:C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci
+generate_target Simulation [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ram_32x256'. Target already exists and is up to date.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_jpegls_encoder_behav -key {Behavioral:sim_1:Functional:tb_jpegls_encoder} -tclbatch {tb_jpegls_encoder.tcl} -protoinst "protoinst_files/bd_8562.protoinst" -protoinst "protoinst_files/system.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+source tb_jpegls_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_jpegls_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1172.422 ; gain = 0.000
+run 5 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Vivado 12-5457] ref source:C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci
+generate_target Simulation [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/ip/ram_32x256/ram_32x256.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ram_32x256'. Target already exists and is up to date.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_jpegls_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip -prj tb_jpegls_encoder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/BaiduNetdiskDownload/vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 37eaf3169200434ea111a393e7136a70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_jpegls_encoder_behav xil_defaultlib.tb_jpegls_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_width' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'tile_height' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sim_1/new/tb_jpegls_encoder.v:68]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:103]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamIn.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'm' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/RunModeProcessing.v:207]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addra' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:108]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'addrb' [C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/imports/src/DataRamOut.v:113]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/password_is_447/Desktop/image_compress/reg_system/tb_jpegls_encoder_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_jpegls_encoder_behav -key {Behavioral:sim_1:Functional:tb_jpegls_encoder} -tclbatch {tb_jpegls_encoder.tcl} -protoinst "protoinst_files/bd_8562.protoinst" -protoinst "protoinst_files/system.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8562.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_8562.protoinst for the following reason(s):
+There are no instances of module "bd_8562" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/system.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/system.protoinst for the following reason(s):
+There are no instances of module "system" in the design.
+
+Time resolution is 1 ps
+source tb_jpegls_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamIn_u0.ram_in32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_jpegls_encoder.encoder_top_u0.DataRamOut_u0.ram_out32x256.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_jpegls_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1172.422 ; gain = 0.000
+run 5 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_bd_design {C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/system.bd}
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+xit::source_ipfile: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1172.422 ; gain = 0.000
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-927] Following properties on pin /apb_reg_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_processing_system7_0_1_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /encoder_top_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_processing_system7_0_1_FCLK_CLK0 
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1172.422 ; gain = 0.000
+save_bd_design
+Wrote  : <C:\Users\password_is_447\Desktop\image_compress\reg_system\reg_system.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+generate_target all [get_files  C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph_1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_apb_bridge_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block apb_reg_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block encoder_top_0 .
+Exporting to file c:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/ip/system_axi_smc_2/bd_0/hw_handoff/system_axi_smc_2.hwh
+Generated Block Design Tcl file c:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/ip/system_axi_smc_2/bd_0/hw_handoff/system_axi_smc_2_bd.tcl
+Generated Hardware Definition File c:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/ip/system_axi_smc_2/bd_0/synth/system_axi_smc_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_10M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph_1/s00_couplers/auto_pc .
+Exporting to file C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1379.242 ; gain = 199.340
+export_ip_user_files -of_objects [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.srcs/sources_1/bd/system/system.bd] -directory C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.ip_user_files -ipstatic_source_dir C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.cache/compile_simlib/modelsim} {questa=C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.cache/compile_simlib/questa} {riviera=C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.cache/compile_simlib/riviera} {activehdl=C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Aug 16 21:23:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.runs/synth_1/runme.log
+[Wed Aug 16 21:23:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.runs/impl_1/runme.log
+close_bd_design [get_bd_designs system]
+launch_sdk -workspace C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sdk -hwspec C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sdk -hwspec C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.runs/impl_1/system_wrapper.sysdef C:/Users/password_is_447/Desktop/image_compress/reg_system/reg_system.sdk/system_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 16 21:58:38 2023...

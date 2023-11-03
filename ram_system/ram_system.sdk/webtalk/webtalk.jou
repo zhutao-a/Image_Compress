@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Sat Aug 12 20:07:49 2023
+# Process ID: 6912
+# Current directory: C:/Users/password_is_447/Desktop/image_compress/system/system/system.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/password_is_447/Desktop/image_compress/system/system/system.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/password_is_447/Desktop/image_compress/system/system/system.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
